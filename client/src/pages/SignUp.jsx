@@ -48,12 +48,12 @@ export const SignUp= () => {
         <input type='text' placeholder='Username' className='border p-3 rounded-lg' id='username' onChange={handleChange}/>
         <input type='email' placeholder='Email' className='border p-3 rounded-lg' id='email' onChange={handleChange}/>
         <input type='password' placeholder='Password' className='border p-3 rounded-lg' id='password' onChange={handleChange}/>
-        <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80 '> {loading ? '...loading' : 'Sign Up' } </button>
+        <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80 '> {loading ? '...loading' : 'Sign In' } </button>
       </form>
       <div className='flex gap-2 mt-5'>
         <p>Have an account?</p>
-        <Link to={'/sign-in'}>
-          <span className='text-blue-700 ' >Sign in</span>
+        <Link to={'/sign-up'}>
+          <span className='text-blue-700 ' >Sign In</span>
         </Link>
       </div>
     </div>
